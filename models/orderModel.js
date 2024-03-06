@@ -20,10 +20,10 @@ class Items {
                 }
             }
 
-            return true; // Assuming success if the loop completes without errors
+            return true; 
         } catch (error) {
             console.error(error.message);
-            throw error; // Rethrow the error for handling in the frontend
+            throw error;
         }
     }  
 
