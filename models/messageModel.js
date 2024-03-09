@@ -22,7 +22,5 @@ class Message {
                             return err
                        })
     }
-
-
 }
 module.exports= {Message}

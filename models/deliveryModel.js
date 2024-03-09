@@ -3,7 +3,6 @@ class Delivery {
         constructor(){
 
         }
-
     async addStaff (staffDetails){
     
         const sql = `INSERT INTO delivery_staff 
@@ -22,10 +21,7 @@ class Delivery {
                             return err
                        })
     }
-
-
 }
-
 class Staff {
     constructor(id, name, contact, email) {
             this.id = id,
@@ -33,8 +29,6 @@ class Staff {
             this.contact = contact,
             this.email = email
     }
-
-
     async getStaff() {
 
         const query = `SELECT * FROM delivery_staff`
@@ -42,10 +36,7 @@ class Staff {
             .catch(err => err)
 
         return res
-
     }
-
-
 }
 
 class Details {
@@ -82,11 +73,7 @@ class Details {
                         console.log(err.message)
                         return err
                    })
-}
-
-
-}
-}
+}}}
 
 class Items {
     async getDetails() {

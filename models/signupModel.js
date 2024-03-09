@@ -6,7 +6,6 @@ class Signup {
         
     }
 
-
     async signupDetails(details){
         console.log(details)
         if (!details.email||!details.password) throw Error ('Email and Password Fields are required!')
@@ -57,12 +56,8 @@ class Signup {
             console.log(err.message)
             return err
        })
-
-        
-
     }
     
-
     async signinDetails(details){
         console.log(details.username,details.email,details.password)
         if (!details.email||!details.password) throw Error ('Email and Password Fields are required!')
@@ -83,16 +78,8 @@ class Signup {
         if (match) {
             console.log(true)
             return res[0][0].role
-        }
-    
-        
-        
-
-
-        
-        
+        }       
     }
-   
 }
 class CustomerData {
     constructor(username, email, role) {
@@ -100,7 +87,6 @@ class CustomerData {
             this.email = email,
             this.role = role
     }
-
 
     async customerDetails() {
 
@@ -111,10 +97,7 @@ class CustomerData {
 
         console.log(res);
         return res
-
     }
-
-
 }
 
 module.exports = {Signup, CustomerData}

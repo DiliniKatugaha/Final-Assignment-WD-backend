@@ -26,7 +26,6 @@ class Items {
             throw error;
         }
     }  
-
 }
 
 class Order {
@@ -36,7 +35,6 @@ class Order {
             this.quantity = quantity,
             this.customerId = customerId
     }
-
 
     async getItems() {
 
@@ -48,9 +46,6 @@ class Order {
 
     }
 
-
 }
-
-
 
 module.exports = { Order , Items };

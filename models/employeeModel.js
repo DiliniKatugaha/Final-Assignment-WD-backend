@@ -6,7 +6,6 @@ class Employee {
         constructor(){
 
         }
-
     async addEmployee (details){
         console.log(details)
         if (!details.email||!details.password) throw Error ('Email and Password Fields are required!')
@@ -37,8 +36,6 @@ class Employee {
                             return err
                        })
     }
-
-
 }
 
 class EmployeeList {
@@ -47,7 +44,6 @@ class EmployeeList {
             this.email = email,
             this.role = role
     }
-
 
     async getEmployee() {
 
@@ -58,9 +54,6 @@ class EmployeeList {
 
         console.log(res);
         return res
-
     }
-
-
 }
 module.exports= {Employee , EmployeeList}

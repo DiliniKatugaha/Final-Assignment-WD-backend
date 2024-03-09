@@ -9,9 +9,6 @@ exports.addStaff= async(req,res)=>{
     console.log(err)
     res.status(400).send(err.message)
   })
-    
-
-    
 }
 
 const Staff = new deliveryModel.Staff
@@ -21,8 +18,7 @@ exports.getStaff  = async (req,res)=>{
     Staff.getStaff().then((data)=>{
         console.log(data)
         res.json(data);
-    });
-    
+    });  
 }
 const delivery = new deliveryModel.Details()
 exports.addDetails= async(req,res)=>{
@@ -32,10 +28,7 @@ exports.addDetails= async(req,res)=>{
   }).catch((err)=>{
     console.log(err)
     res.status(400).send(err.message)
-  })
-    
-
-    
+  })  
 }
 
 const Items = new deliveryModel.Items
